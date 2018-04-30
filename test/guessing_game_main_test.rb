@@ -10,6 +10,11 @@ class GuessingGameTest < Minitest::Test
 
   def test_that_the_game_generates_a_random_number
     new_game = GuessingGame.new
-    assert new_game.start_game.between?(1,100)
+    assert new_game.pre_game.between?(1,100)
+  end
+
+  def test_that_the_wrong_guess_is_defaulted_to_true
+    new_game = GuessingGame.new
+    assert new_game.pre_game
   end
 end
