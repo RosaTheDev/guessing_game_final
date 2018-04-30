@@ -15,6 +15,6 @@ class GuessingGameTest < Minitest::Test
 
   def test_that_the_wrong_guess_is_defaulted_to_true
     new_game = GuessingGame.new
-    assert new_game.pre_game
+    assert new_game.wrong_guess
   end
 end
