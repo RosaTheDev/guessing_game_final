@@ -13,6 +13,8 @@ class GuessingGame
       @user_guess = gets.chomp
       if @user_guess == 'c'.downcase || @user_guess == 'cheat'.downcase
         prints_the_random_number
+      elsif @random_number == @user_guess.to_i
+        @wrong_guess = false
       end
     end
   end
