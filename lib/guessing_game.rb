@@ -15,6 +15,10 @@ class GuessingGame
         prints_the_random_number
       elsif @random_number == @user_guess.to_i
         @wrong_guess = false
+      elsif @random_number > @user_guess.to_i
+        answer_too_low
+      elsif @random_number < @user_guess.to_i
+        answer_too_high
       end
     end
   end
