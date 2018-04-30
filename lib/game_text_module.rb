@@ -15,6 +15,6 @@ module GameText
   end
 
   def prints_the_random_number
-    puts "#{@random_number} hehehehehe you suck.."
+    puts "#{@random_number} hehehehehe you suck..\n>"
   end
 end
