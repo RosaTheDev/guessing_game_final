@@ -8,5 +8,12 @@ class GuessingGame
     @wrong_guess = true
   end
 
-
+  def gaming
+    while @wrong_guess
+      @user_guess = gets.chomp
+      if @user_guess == 'c'.downcase || @user_guess == 'cheat'.downcase
+        prints_the_random_number
+      end
+    end
+  end
 end
